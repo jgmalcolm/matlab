@@ -7,8 +7,10 @@ set(0, 'DefaultFigureMenu', 'none', ...
 % set(0, 'ShareColors', 'off');
 % set(0, 'DefaultFigureRenderer', 'OpenGL');
 
-addpath('~/matlab/lib');
-addpath('~/matlab/lib/visual');
-addpath('~/matlab/lib/diffs');
+p = which('startup');
+p = p(1:end-numel('startup.m'));
+addpath([p 'matlab/lib']);
+addpath([p 'matlab/lib/visual']);
+addpath([p 'matlab/lib/diffs']);
 
 disp('[malcolm environment set]');
