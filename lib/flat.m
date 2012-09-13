@@ -1,3 +1,2 @@
-function m = flat(m)
-  m = m(:);
-end
+function x = flat(x)
+  x = x(:);
