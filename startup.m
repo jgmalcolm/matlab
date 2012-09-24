@@ -12,5 +12,6 @@ p = p(1:end-numel('startup.m'));
 addpath([p 'matlab/lib']);
 addpath([p 'matlab/lib/visual']);
 addpath([p 'matlab/lib/diffs']);
+clear p
 
 disp('[malcolm environment set]');
