@@ -17,6 +17,6 @@ function stats(varargin)
     nans = '';
   end
 
-  fprintf('%srange=[%g  %g]  mean %g  std %g  median %g  kurt %g%s\n', ...
+  fprintf('%srange=[%-12g  %-12g]  mean %-12g  std %-12g  median %-12g  kurt %-12g%s\n', ...
           name, nanmin(x), nanmax(x), nanmean(x), nanstd(x), nanmedian(x), nankurt(x), nans)
 end
