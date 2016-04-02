@@ -9,9 +9,9 @@ set(0, 'DefaultFigureMenu', 'none', ...
 
 p = which('startup');
 p = p(1:end-numel('startup.m'));
-addpath([p 'matlab/lib']);
-addpath([p 'matlab/lib/visual']);
-addpath([p 'matlab/lib/diffs']);
+addpath([p 'lib']);
+addpath([p 'lib/visual']);
+addpath([p 'lib/diffs']);
 clear p
 
 disp('[malcolm environment set]');
