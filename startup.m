@@ -2,6 +2,7 @@
 format compact
 format short
 colordef black
+dbstop if error
 set(0, 'DefaultFigureMenu', 'none', ...
        'DefaultFigureColor', 'k');
 % set(0, 'ShareColors', 'off');
