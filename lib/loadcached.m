@@ -9,8 +9,8 @@ function varargout = loadcached(file, varargin)
   % if not in cache, pull it in
   if ~ismember(file, cache.keys)
     fprintf('caching %s... (%d entries)\n', file, 1+numel(cache.keys))
+    cache.vals{end+1} = load(file);  % attempt load before recording filename
     cache.keys{end+1} = file;
-    cache.vals{end+1} = load(file);
   end
 
   % return from cache
