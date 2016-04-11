@@ -9,9 +9,7 @@ set(gcf, 'InvertHardcopy', 'off')
 
 p = which('startup');
 p = p(1:end-numel('startup.m'));
-addpath([p 'lib']);
-addpath([p 'lib/visual']);
-addpath([p 'lib/diffs']);
+addpath(genpath([p 'lib']))
 clear p
 
 disp('{preferences complete}');
