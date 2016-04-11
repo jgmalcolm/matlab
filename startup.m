@@ -4,7 +4,8 @@ format short
 colordef black
 dbstop if error
 set(0, 'DefaultFigureMenu', 'none', ...
-       'DefaultFigureColor', 'k');
+       'DefaultFigureColor', 'k')
+set(gcf, 'InvertHardcopy', 'off')
 
 p = which('startup');
 p = p(1:end-numel('startup.m'));
