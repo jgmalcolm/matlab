@@ -1,9 +1,6 @@
 function h_ = sp(nrows,ncols,i,inset)
   if ~exist('inset')
-    %inset = 0.22;
-    %inset = 0.20;
     inset = 0.05;
-    %inset = 0;
   end
 
   if ~isscalar(i)
