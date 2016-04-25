@@ -8,7 +8,7 @@ function h_ = sp(nrows,ncols,i,inset)
   else
     row = nrows-1 - fix((i-1)/ncols);
     col = rem(i-1, ncols);
-    pos = ([col row 1 1] + inset*[1 1 -2 -2])./[ncols nrows ncols nrows];
+    pos = ([col row 1 1] + inset*[1 1 -1 -2])./[ncols nrows ncols nrows];
     h = subplot('position', pos);
   end
 
