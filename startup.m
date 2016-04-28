@@ -1,4 +1,3 @@
-% iptsetpref('ImshowBorder','tight');
 format compact
 format short
 colordef black
