@@ -1,9 +1,8 @@
 format compact
 format short
-colordef black
+% colordef black
 dbstop if error
 set(0, 'DefaultFigureMenu', 'none', ...
-       'DefaultFigureColor', 'k', ...
        'DefaultFigureInvertHardcopy', 'on')
 
 p = which('startup');
