@@ -21,9 +21,15 @@ function varargout = loadcached(file, varargin)
     varargout{i} = data.(varargin{i});
   end
 
-  % if no inputs and .mat only had one variable, assume that is wanted
+  % if no varnames ...
   flds = fieldnames(data);
-  if nargin == 1 && numel(flds) == 1
-    varargout{1} = data.(flds{1});
+  if nargin == 1
+    % ...and .mat only had one variable, assume that is wanted
+    if numel(flds) == 1
+      varargout{1} = data.(flds{1});
+    else
+      % otherwise return as struct
+      varargout{1} = data;
+    end
   end
 end
