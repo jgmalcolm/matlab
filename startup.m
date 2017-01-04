@@ -3,6 +3,7 @@ format short
 % colordef black
 dbstop if error
 set(0, 'DefaultFigureMenu', 'none', ...
+       'DefaultFigureToolbar','none', ...
        'DefaultFigureInvertHardcopy', 'on')
 
 p = which('startup');
